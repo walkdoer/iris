@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Iris</title>
+<script type="text/javascript" src="iris.js"></script>
+<style type="text/css">
+   .c1 {
+    background-color: #c1b3f3;
+    margin:10px;
+   }
+</style>
+
+<body>
+  <div id="a1">a1</div>
+  <div id="a2">
+      <div class="c1"> class c1</div>
+      <div class="c1"> class c1</div>
+      <div class="c1"> class c1</div>
+  </div>
+  <div id="b1">
+      <div class="c1"> class c1</div>
+      <div class="c1"> class c1</div>
+      <div class="c1"> class c1</div>
+  </div>
+  <div id="b2">b2</div>
+</body>
+<script type="text/javascript">
+  if (iris.isCompatible()) {
+    console.log(iris.$('a1'));
+  }
+</script>
+</html>
